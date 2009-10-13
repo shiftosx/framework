@@ -1,0 +1,419 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C1666FE841158C02AAC07 /* InfoPlist.strings */; };
+		8DC2EF570486A6940098B216 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */; };
+		AB868C31107E461900783CA2 /* GBFeature.h in Headers */ = {isa = PBXBuildFile; fileRef = AB868C2F107E461900783CA2 /* GBFeature.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AB868C32107E461900783CA2 /* GBFeature.m in Sources */ = {isa = PBXBuildFile; fileRef = AB868C30107E461900783CA2 /* GBFeature.m */; };
+		AB868C3E107E47AD00783CA2 /* GBView.h in Headers */ = {isa = PBXBuildFile; fileRef = AB868C3C107E47AD00783CA2 /* GBView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AB868C3F107E47AD00783CA2 /* GBView.m in Sources */ = {isa = PBXBuildFile; fileRef = AB868C3D107E47AD00783CA2 /* GBView.m */; };
+		AB868DBE1083EA3400783CA2 /* KeyChain.h in Headers */ = {isa = PBXBuildFile; fileRef = AB868DBC1083EA3400783CA2 /* KeyChain.h */; };
+		AB868DBF1083EA3400783CA2 /* KeyChain.m in Sources */ = {isa = PBXBuildFile; fileRef = AB868DBD1083EA3400783CA2 /* KeyChain.m */; };
+		AB868DC11083EA9B00783CA2 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB868DC01083EA9B00783CA2 /* Security.framework */; };
+		ABE2A63F1078352E004F2E4A /* GBObject.h in Headers */ = {isa = PBXBuildFile; fileRef = ABE2A63C1078352E004F2E4A /* GBObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ABE2A6401078352E004F2E4A /* GBObject.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE2A63D1078352E004F2E4A /* GBObject.m */; };
+		ABE2A64810792F33004F2E4A /* ShiftGearbox.h in Headers */ = {isa = PBXBuildFile; fileRef = ABE2A64610792DEB004F2E4A /* ShiftGearbox.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ABE2A654107A33BD004F2E4A /* GBTable.h in Headers */ = {isa = PBXBuildFile; fileRef = ABE2A652107A33BD004F2E4A /* GBTable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ABE2A655107A33BD004F2E4A /* GBTable.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE2A653107A33BD004F2E4A /* GBTable.m */; };
+		ABE2A658107A342D004F2E4A /* GBSchema.h in Headers */ = {isa = PBXBuildFile; fileRef = ABE2A656107A342D004F2E4A /* GBSchema.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ABE2A659107A342D004F2E4A /* GBSchema.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE2A657107A342D004F2E4A /* GBSchema.m */; };
+		ABE2A65C107A34AE004F2E4A /* GBServer.h in Headers */ = {isa = PBXBuildFile; fileRef = ABE2A65A107A34AE004F2E4A /* GBServer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ABE2A65D107A34AE004F2E4A /* GBServer.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE2A65B107A34AE004F2E4A /* GBServer.m */; };
+		ABE2A668107A376B004F2E4A /* GBEditor.h in Headers */ = {isa = PBXBuildFile; fileRef = ABE2A666107A376B004F2E4A /* GBEditor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ABE2A669107A376B004F2E4A /* GBEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE2A667107A376B004F2E4A /* GBEditor.m */; };
+		ABE2A670107A379C004F2E4A /* GBFunction.h in Headers */ = {isa = PBXBuildFile; fileRef = ABE2A66E107A379C004F2E4A /* GBFunction.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ABE2A671107A379C004F2E4A /* GBFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE2A66F107A379C004F2E4A /* GBFunction.m */; };
+		ABE2A674107A37B8004F2E4A /* GBTrigger.h in Headers */ = {isa = PBXBuildFile; fileRef = ABE2A672107A37B8004F2E4A /* GBTrigger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ABE2A675107A37B8004F2E4A /* GBTrigger.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE2A673107A37B8004F2E4A /* GBTrigger.m */; };
+		ABE2A678107A37CB004F2E4A /* GBStoredProcedure.h in Headers */ = {isa = PBXBuildFile; fileRef = ABE2A676107A37CB004F2E4A /* GBStoredProcedure.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ABE2A679107A37CB004F2E4A /* GBStoredProcedure.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE2A677107A37CB004F2E4A /* GBStoredProcedure.m */; };
+		ABE2A6C6107A4695004F2E4A /* GBPreferences.h in Headers */ = {isa = PBXBuildFile; fileRef = ABE2A6C4107A4695004F2E4A /* GBPreferences.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ABE2A6C7107A4695004F2E4A /* GBPreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE2A6C5107A4695004F2E4A /* GBPreferences.m */; };
+		ABE2A6E8107A4C02004F2E4A /* GBResult.h in Headers */ = {isa = PBXBuildFile; fileRef = ABE2A6E6107A4C02004F2E4A /* GBResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ABE2A6E9107A4C02004F2E4A /* GBResult.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE2A6E7107A4C02004F2E4A /* GBResult.m */; };
+		ABE2A6EC107A4C0B004F2E4A /* GBResultSet.h in Headers */ = {isa = PBXBuildFile; fileRef = ABE2A6EA107A4C0B004F2E4A /* GBResultSet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ABE2A6ED107A4C0B004F2E4A /* GBResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE2A6EB107A4C0B004F2E4A /* GBResultSet.m */; };
+		ABE2A747107A52D1004F2E4A /* GBConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = ABE2A745107A52D1004F2E4A /* GBConnection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ABE2A748107A52D1004F2E4A /* GBConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE2A746107A52D1004F2E4A /* GBConnection.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0867D69BFE84028FC02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		0867D6A5FE840307C02AAC07 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		089C1667FE841158C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		32DBCF5E0370ADEE00C91783 /* ShiftGearbox_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShiftGearbox_Prefix.pch; sourceTree = "<group>"; };
+		8DC2EF5A0486A6940098B216 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DC2EF5B0486A6940098B216 /* ShiftGearbox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ShiftGearbox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB868C2F107E461900783CA2 /* GBFeature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GBFeature.h; path = Source/GBFeature.h; sourceTree = "<group>"; };
+		AB868C30107E461900783CA2 /* GBFeature.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GBFeature.m; path = Source/GBFeature.m; sourceTree = "<group>"; };
+		AB868C3C107E47AD00783CA2 /* GBView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GBView.h; path = Source/GBView.h; sourceTree = "<group>"; };
+		AB868C3D107E47AD00783CA2 /* GBView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GBView.m; path = Source/GBView.m; sourceTree = "<group>"; };
+		AB868DBC1083EA3400783CA2 /* KeyChain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KeyChain.h; path = "Project Source/KeyChain.h"; sourceTree = "<group>"; };
+		AB868DBD1083EA3400783CA2 /* KeyChain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KeyChain.m; path = "Project Source/KeyChain.m"; sourceTree = "<group>"; };
+		AB868DC01083EA9B00783CA2 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = /System/Library/Frameworks/Security.framework; sourceTree = "<absolute>"; };
+		ABE2A63C1078352E004F2E4A /* GBObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GBObject.h; path = Source/GBObject.h; sourceTree = "<group>"; };
+		ABE2A63D1078352E004F2E4A /* GBObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GBObject.m; path = Source/GBObject.m; sourceTree = "<group>"; };
+		ABE2A64610792DEB004F2E4A /* ShiftGearbox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShiftGearbox.h; path = Source/ShiftGearbox.h; sourceTree = "<group>"; };
+		ABE2A652107A33BD004F2E4A /* GBTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GBTable.h; path = Source/GBTable.h; sourceTree = "<group>"; };
+		ABE2A653107A33BD004F2E4A /* GBTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GBTable.m; path = Source/GBTable.m; sourceTree = "<group>"; };
+		ABE2A656107A342D004F2E4A /* GBSchema.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GBSchema.h; path = Source/GBSchema.h; sourceTree = "<group>"; };
+		ABE2A657107A342D004F2E4A /* GBSchema.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GBSchema.m; path = Source/GBSchema.m; sourceTree = "<group>"; };
+		ABE2A65A107A34AE004F2E4A /* GBServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GBServer.h; path = Source/GBServer.h; sourceTree = "<group>"; };
+		ABE2A65B107A34AE004F2E4A /* GBServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GBServer.m; path = Source/GBServer.m; sourceTree = "<group>"; };
+		ABE2A666107A376B004F2E4A /* GBEditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GBEditor.h; path = Source/GBEditor.h; sourceTree = "<group>"; };
+		ABE2A667107A376B004F2E4A /* GBEditor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GBEditor.m; path = Source/GBEditor.m; sourceTree = "<group>"; };
+		ABE2A66E107A379C004F2E4A /* GBFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GBFunction.h; path = Source/GBFunction.h; sourceTree = "<group>"; };
+		ABE2A66F107A379C004F2E4A /* GBFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GBFunction.m; path = Source/GBFunction.m; sourceTree = "<group>"; };
+		ABE2A672107A37B8004F2E4A /* GBTrigger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GBTrigger.h; path = Source/GBTrigger.h; sourceTree = "<group>"; };
+		ABE2A673107A37B8004F2E4A /* GBTrigger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GBTrigger.m; path = Source/GBTrigger.m; sourceTree = "<group>"; };
+		ABE2A676107A37CB004F2E4A /* GBStoredProcedure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GBStoredProcedure.h; path = Source/GBStoredProcedure.h; sourceTree = "<group>"; };
+		ABE2A677107A37CB004F2E4A /* GBStoredProcedure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GBStoredProcedure.m; path = Source/GBStoredProcedure.m; sourceTree = "<group>"; };
+		ABE2A6C4107A4695004F2E4A /* GBPreferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GBPreferences.h; path = Source/GBPreferences.h; sourceTree = "<group>"; };
+		ABE2A6C5107A4695004F2E4A /* GBPreferences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GBPreferences.m; path = Source/GBPreferences.m; sourceTree = "<group>"; };
+		ABE2A6E6107A4C02004F2E4A /* GBResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GBResult.h; path = Source/GBResult.h; sourceTree = "<group>"; };
+		ABE2A6E7107A4C02004F2E4A /* GBResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GBResult.m; path = Source/GBResult.m; sourceTree = "<group>"; };
+		ABE2A6EA107A4C0B004F2E4A /* GBResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GBResultSet.h; path = Source/GBResultSet.h; sourceTree = "<group>"; };
+		ABE2A6EB107A4C0B004F2E4A /* GBResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GBResultSet.m; path = Source/GBResultSet.m; sourceTree = "<group>"; };
+		ABE2A745107A52D1004F2E4A /* GBConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GBConnection.h; path = Source/GBConnection.h; sourceTree = "<group>"; };
+		ABE2A746107A52D1004F2E4A /* GBConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GBConnection.m; path = Source/GBConnection.m; sourceTree = "<group>"; };
+		D2F7E79907B2D74100F64583 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8DC2EF560486A6940098B216 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DC2EF570486A6940098B216 /* Cocoa.framework in Frameworks */,
+				AB868DC11083EA9B00783CA2 /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8DC2EF5B0486A6940098B216 /* ShiftGearbox.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* ShiftGearbox */ = {
+			isa = PBXGroup;
+			children = (
+				08FB77AEFE84172EC02AAC07 /* Classes */,
+				AB868DBB1083E9B500783CA2 /* Project Sources */,
+				32C88DFF0371C24200C91783 /* Other Sources */,
+				089C1665FE841158C02AAC07 /* Resources */,
+				0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */,
+				034768DFFF38A50411DB9C8B /* Products */,
+			);
+			name = ShiftGearbox;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7B0FEA5585E11CA2CBB /* Linked Frameworks */,
+				1058C7B2FEA5585E11CA2CBB /* Other Frameworks */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		089C1665FE841158C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8DC2EF5A0486A6940098B216 /* Info.plist */,
+				089C1666FE841158C02AAC07 /* InfoPlist.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		08FB77AEFE84172EC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				ABE2A745107A52D1004F2E4A /* GBConnection.h */,
+				ABE2A746107A52D1004F2E4A /* GBConnection.m */,
+				ABE2A666107A376B004F2E4A /* GBEditor.h */,
+				ABE2A667107A376B004F2E4A /* GBEditor.m */,
+				AB868C2F107E461900783CA2 /* GBFeature.h */,
+				AB868C30107E461900783CA2 /* GBFeature.m */,
+				ABE2A66E107A379C004F2E4A /* GBFunction.h */,
+				ABE2A66F107A379C004F2E4A /* GBFunction.m */,
+				ABE2A63C1078352E004F2E4A /* GBObject.h */,
+				ABE2A63D1078352E004F2E4A /* GBObject.m */,
+				ABE2A6C4107A4695004F2E4A /* GBPreferences.h */,
+				ABE2A6C5107A4695004F2E4A /* GBPreferences.m */,
+				ABE2A6E6107A4C02004F2E4A /* GBResult.h */,
+				ABE2A6E7107A4C02004F2E4A /* GBResult.m */,
+				ABE2A6EA107A4C0B004F2E4A /* GBResultSet.h */,
+				ABE2A6EB107A4C0B004F2E4A /* GBResultSet.m */,
+				ABE2A656107A342D004F2E4A /* GBSchema.h */,
+				ABE2A657107A342D004F2E4A /* GBSchema.m */,
+				ABE2A65A107A34AE004F2E4A /* GBServer.h */,
+				ABE2A65B107A34AE004F2E4A /* GBServer.m */,
+				ABE2A676107A37CB004F2E4A /* GBStoredProcedure.h */,
+				ABE2A677107A37CB004F2E4A /* GBStoredProcedure.m */,
+				ABE2A652107A33BD004F2E4A /* GBTable.h */,
+				ABE2A653107A33BD004F2E4A /* GBTable.m */,
+				ABE2A672107A37B8004F2E4A /* GBTrigger.h */,
+				ABE2A673107A37B8004F2E4A /* GBTrigger.m */,
+				AB868C3C107E47AD00783CA2 /* GBView.h */,
+				AB868C3D107E47AD00783CA2 /* GBView.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7B0FEA5585E11CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */,
+				AB868DC01083EA9B00783CA2 /* Security.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7B2FEA5585E11CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0867D6A5FE840307C02AAC07 /* AppKit.framework */,
+				D2F7E79907B2D74100F64583 /* CoreData.framework */,
+				0867D69BFE84028FC02AAC07 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		32C88DFF0371C24200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32DBCF5E0370ADEE00C91783 /* ShiftGearbox_Prefix.pch */,
+				ABE2A64610792DEB004F2E4A /* ShiftGearbox.h */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		AB868DBB1083E9B500783CA2 /* Project Sources */ = {
+			isa = PBXGroup;
+			children = (
+				AB868DBC1083EA3400783CA2 /* KeyChain.h */,
+				AB868DBD1083EA3400783CA2 /* KeyChain.m */,
+			);
+			name = "Project Sources";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8DC2EF500486A6940098B216 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABE2A64810792F33004F2E4A /* ShiftGearbox.h in Headers */,
+				ABE2A63F1078352E004F2E4A /* GBObject.h in Headers */,
+				ABE2A654107A33BD004F2E4A /* GBTable.h in Headers */,
+				ABE2A658107A342D004F2E4A /* GBSchema.h in Headers */,
+				ABE2A65C107A34AE004F2E4A /* GBServer.h in Headers */,
+				ABE2A668107A376B004F2E4A /* GBEditor.h in Headers */,
+				ABE2A670107A379C004F2E4A /* GBFunction.h in Headers */,
+				ABE2A674107A37B8004F2E4A /* GBTrigger.h in Headers */,
+				ABE2A678107A37CB004F2E4A /* GBStoredProcedure.h in Headers */,
+				ABE2A6C6107A4695004F2E4A /* GBPreferences.h in Headers */,
+				ABE2A6E8107A4C02004F2E4A /* GBResult.h in Headers */,
+				ABE2A6EC107A4C0B004F2E4A /* GBResultSet.h in Headers */,
+				ABE2A747107A52D1004F2E4A /* GBConnection.h in Headers */,
+				AB868C31107E461900783CA2 /* GBFeature.h in Headers */,
+				AB868C3E107E47AD00783CA2 /* GBView.h in Headers */,
+				AB868DBE1083EA3400783CA2 /* KeyChain.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8DC2EF4F0486A6940098B216 /* ShiftGearbox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB91AD08733DA50010E9CD /* Build configuration list for PBXNativeTarget "ShiftGearbox" */;
+			buildPhases = (
+				8DC2EF500486A6940098B216 /* Headers */,
+				8DC2EF520486A6940098B216 /* Resources */,
+				8DC2EF540486A6940098B216 /* Sources */,
+				8DC2EF560486A6940098B216 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShiftGearbox;
+			productInstallPath = "$(HOME)/Library/Frameworks";
+			productName = ShiftGearbox;
+			productReference = 8DC2EF5B0486A6940098B216 /* ShiftGearbox.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB91B108733DA50010E9CD /* Build configuration list for PBXProject "ShiftGearbox" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 0867D691FE84028FC02AAC07 /* ShiftGearbox */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8DC2EF4F0486A6940098B216 /* ShiftGearbox */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8DC2EF520486A6940098B216 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8DC2EF540486A6940098B216 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABE2A6401078352E004F2E4A /* GBObject.m in Sources */,
+				ABE2A655107A33BD004F2E4A /* GBTable.m in Sources */,
+				ABE2A659107A342D004F2E4A /* GBSchema.m in Sources */,
+				ABE2A65D107A34AE004F2E4A /* GBServer.m in Sources */,
+				ABE2A669107A376B004F2E4A /* GBEditor.m in Sources */,
+				ABE2A671107A379C004F2E4A /* GBFunction.m in Sources */,
+				ABE2A675107A37B8004F2E4A /* GBTrigger.m in Sources */,
+				ABE2A679107A37CB004F2E4A /* GBStoredProcedure.m in Sources */,
+				ABE2A6C7107A4695004F2E4A /* GBPreferences.m in Sources */,
+				ABE2A6E9107A4C02004F2E4A /* GBResult.m in Sources */,
+				ABE2A6ED107A4C0B004F2E4A /* GBResultSet.m in Sources */,
+				ABE2A748107A52D1004F2E4A /* GBConnection.m in Sources */,
+				AB868C32107E461900783CA2 /* GBFeature.m in Sources */,
+				AB868C3F107E47AD00783CA2 /* GBView.m in Sources */,
+				AB868DBF1083EA3400783CA2 /* KeyChain.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C1666FE841158C02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C1667FE841158C02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB91AE08733DA50010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CONFIGURATION_BUILD_DIR = "$(PROJECT_DIR)/../shift/Frameworks/";
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ShiftGearbox_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				PRODUCT_NAME = ShiftGearbox;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		1DEB91AF08733DA50010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ShiftGearbox_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				PRODUCT_NAME = ShiftGearbox;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		1DEB91B208733DA50010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Debug;
+		};
+		1DEB91B308733DA50010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB91AD08733DA50010E9CD /* Build configuration list for PBXNativeTarget "ShiftGearbox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB91AE08733DA50010E9CD /* Debug */,
+				1DEB91AF08733DA50010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB91B108733DA50010E9CD /* Build configuration list for PBXProject "ShiftGearbox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB91B208733DA50010E9CD /* Debug */,
+				1DEB91B308733DA50010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}
